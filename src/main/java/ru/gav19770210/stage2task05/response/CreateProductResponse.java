@@ -7,22 +7,19 @@ import lombok.ToString;
 import java.util.ArrayList;
 import java.util.List;
 
-@ToString
+@Getter
 @Setter
+@ToString
 public class CreateProductResponse {
-    @Getter
     private ResponseData data = new ResponseData();
-    @Getter
     private String errorText;
 
-    @ToString
+    @Getter
     @Setter
+    @ToString
     public static class ResponseData {
-        @Getter
         private Long instanceId;
-        @Getter
         private List<Long> registerId = new ArrayList<>();
-        @Getter
         private List<Long> supplementaryAgreementId = new ArrayList<>();
     }
 }
