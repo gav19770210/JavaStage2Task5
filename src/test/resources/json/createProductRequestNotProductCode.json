@@ -1,0 +1,59 @@
+{
+  "instanceId": null,
+  "productType": "НСО",
+  "productCode": "XXX",
+  "registerType": "03.012.002_47533_ComSoLd",
+  "mdmCode": "15",
+  "contractNumber": "001/2023_NSO",
+  "contractDate": "2024-01-02",
+  "priority": 1,
+  "interestRatePenalty": 13.13,
+  "minimalBalance": 111.11,
+  "thresholdAmount": 333333.33,
+  "accountingDetails": "расчётный счёт в банке",
+  "rateType": "прогрессивная",
+  "taxPercentageRate": 5.5,
+  "technicalOverdraftLimitAmount": 999.99,
+  "contractId": 0,
+  "branchCode": "0022",
+  "isoCurrencyCode": "800",
+  "additionalPropertiesVip": {
+    "data": [
+      {
+        "key": "RailwayRegionOwn",
+        "value": "ABC",
+        "name": "Регион принадлежности железной дороги"
+      },
+      {
+        "key": "counter",
+        "value": "123",
+        "name": "Счетчик"
+      }
+    ]
+  },
+  "instanceAgreement": [
+    {
+      "generalAgreementId": 111,
+      "supplementaryAgreementId": 222,
+      "arrangementType": "НСО",
+      "schedulerJobId": 888,
+      "number": "numberDS",
+      "openingDate": "2024-01-02",
+      "closingDate": "2026-01-02",
+      "cancelDate": "",
+      "validityDuration": 77,
+      "cancellationReason": "",
+      "status": "открыт",
+      "interestCalculationDate": "2024-01-02",
+      "interestRate": 13.13,
+      "coefficient": 6.66,
+      "coefficientAction": "+",
+      "minimumInterestRate": 0.01,
+      "minimumInterestRateCoefficient": 1.1,
+      "minimumInterestRateCoefficientAction": "-",
+      "maximalInterestRate": 99.99,
+      "maximalInterestRateCoefficient": 9.99,
+      "maximalInterestRateCoefficientAction": "+"
+    }
+  ]
+}

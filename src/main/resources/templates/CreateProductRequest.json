@@ -1,0 +1,177 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "properties": {
+    "instanceId": {
+      "anyOf": [
+        {"type": "null"},
+        {"type": "integer"}
+      ]
+    },
+    "productType": {
+      "type": "string",
+      "enum": ["НСО", "СМО", "ЕЖО", "ДБДС", "договор"]
+    },
+    "productCode": {
+      "type": "string"
+    },
+    "registerType": {
+      "type": "string"
+    },
+    "mdmCode": {
+      "type": "string"
+    },
+    "contractNumber": {
+      "type": "string"
+    },
+    "contractDate": {
+      "type": "string"
+    },
+    "priority": {
+      "type": "integer"
+    },
+    "interestRatePenalty": {
+      "type": "number"
+    },
+    "minimalBalance": {
+      "type": "number"
+    },
+    "thresholdAmount": {
+      "type": "number"
+    },
+    "accountingDetails": {
+      "type": "string"
+    },
+    "rateType": {
+      "type": "string"
+    },
+    "taxPercentageRate": {
+      "type": "number"
+    },
+    "technicalOverdraftLimitAmount": {
+      "type": "number"
+    },
+    "contractId": {
+      "type": "integer"
+    },
+    "branchCode": {
+      "type": "string"
+    },
+    "isoCurrencyCode": {
+      "type": "string"
+    },
+    "additionalPropertiesVip": {
+      "type": "object",
+      "properties": {
+        "data": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "key": {
+                "type": "string"
+              },
+              "value": {
+                "type": "string"
+              },
+              "name": {
+                "type": "string"
+              }
+            },
+            "additionalProperties": true
+          }
+        }
+      },
+      "additionalProperties": true
+    },
+    "instanceAgreement": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "generalAgreementId": {
+            "type": "integer"
+          },
+          "supplementaryAgreementId": {
+            "type": "integer"
+          },
+          "arrangementType": {
+            "type": "string"
+          },
+          "schedulerJobId": {
+            "type": "integer"
+          },
+          "number": {
+            "type": "string"
+          },
+          "openingDate": {
+            "type": "string"
+          },
+          "closingDate": {
+            "type": "string"
+          },
+          "cancelDate": {
+            "type": "string"
+          },
+          "validityDuration": {
+            "type": "integer"
+          },
+          "cancellationReason": {
+            "type": "string"
+          },
+          "status": {
+            "type": "string"
+          },
+          "interestCalculationDate": {
+            "type": "string"
+          },
+          "interestRate": {
+            "type": "number"
+          },
+          "coefficient": {
+            "type": "number"
+          },
+          "coefficientAction": {
+            "type": "string"
+          },
+          "minimumInterestRate": {
+            "type": "number"
+          },
+          "minimumInterestRateCoefficient": {
+            "type": "number"
+          },
+          "minimumInterestRateCoefficientAction": {
+            "type": "string"
+          },
+          "maximalInterestRate": {
+            "type": "number"
+          },
+          "maximalInterestRateCoefficient": {
+            "type": "number"
+          },
+          "maximalInterestRateCoefficientAction": {
+            "type": "string"
+          }
+        },
+        "additionalProperties": true,
+        "required": [
+          "number",
+          "openingDate"
+        ]
+      }
+    }
+  },
+  "additionalProperties": true,
+  "required": [
+    "productType",
+    "productCode",
+    "registerType",
+    "mdmCode",
+    "contractNumber",
+    "contractDate",
+    "priority",
+    "contractId",
+    "branchCode",
+    "isoCurrencyCode"
+  ]
+}

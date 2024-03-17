@@ -1,0 +1,55 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "properties": {
+    "instanceId": {
+      "description": "Идентификатор ЭП, к которому привязывается продуктовый регистр",
+      "type": "integer"
+    },
+    "registryTypeCode": {
+      "description": "Тип создаваемого продуктового регистра",
+      "type": "string"
+    },
+    "accountType": {
+      "description": "Клиентский или внутрибанковский",
+      "type": "string"
+    },
+    "currencyCode": {
+      "description": "3-х значный код валюты",
+      "type": "string"
+    },
+    "branchCode": {
+      "description": "Код филиала",
+      "type": "string"
+    },
+    "priorityCode": {
+      "description": "Всегда «00» для ПП РО ЮЛ",
+      "type": "string"
+    },
+    "mdmCode": {
+      "description": "МДМ код клиента (КЮЛ)",
+      "type": "string"
+    },
+    "clientCode": {
+      "description": "Код клиента. Только для ВИП (РЖД, ФПК). Обсуждается с клиентом (есть выбор)",
+      "type": "string"
+    },
+    "trainRegion": {
+      "description": "Регион принадлежности железной дороги. Только для ВИП (РЖД, ФПК)",
+      "type": "string"
+    },
+    "counter": {
+      "description": "Счетчик. Только для ВИП (РЖД, ФПК)",
+      "type": "string"
+    },
+    "salesCode": {
+      "description": "Код точки продаж",
+      "type": "string"
+    }
+  },
+  "additionalProperties": true,
+  "required": [
+    "instanceId",
+    "registryTypeCode"
+  ]
+}

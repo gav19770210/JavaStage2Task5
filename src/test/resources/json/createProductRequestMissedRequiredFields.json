@@ -1,0 +1,24 @@
+{
+  "instanceId": null,
+  "interestRatePenalty": 13.13,
+  "minimalBalance": 111.11,
+  "thresholdAmount": 333333.33,
+  "accountingDetails": "расчётный счёт в банке",
+  "rateType": "прогрессивная",
+  "taxPercentageRate": 5.5,
+  "technicalOverdraftLimitAmount": 999.99,
+  "additionalPropertiesVip": {
+    "data": [
+      {
+        "key": "RailwayRegionOwn",
+        "value": "ABC",
+        "name": "Регион принадлежности железной дороги"
+      },
+      {
+        "key": "counter",
+        "value": "123",
+        "name": "Счетчик"
+      }
+    ]
+  }
+}
